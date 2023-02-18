@@ -1,5 +1,12 @@
 from collections import Counter
 
+"""
+Note!!! Counter.update({}) method just adds its counts values(increases),
+not particularly "update"s it. For example, if we want {x:1}
+and we update counter with {x:10}, in the final results we won"t have
+counter({x:10}), it will be counter({x:10+1}), number of count of x will be 11'
+"""
+
 
 def main():
     n = int(input())
